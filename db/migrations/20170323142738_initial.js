@@ -33,7 +33,7 @@ exports.up = function(knex, Promise) {
 
         knex.schema.createTable('ingredients', function(table) {
             table.increments('id').primary();
-            table.string('info');
+            table.string('name');
 
             table.timestamps();
         }),
@@ -42,7 +42,7 @@ exports.up = function(knex, Promise) {
           table.increments('id').primary();
           table.integer('pantry_id').references('id').inTable('pantrys');
           table.integer('ingredient_id').references('id').inTable('ingredients');
-          table.integer('quantity');
+          table.string('quantity');
 
           table.timestamps();
         }),
