@@ -6,7 +6,7 @@ A server built with node-express that connects to a postgres db via knex. For te
 
 ### End Points
 
-you can check out the following endpoints on heroku
+you can check out the following endpoints on [heroku](https://recipez-api.herokuapp.com/)
 
 #### Get Requests
 
